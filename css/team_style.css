@@ -1,0 +1,266 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+:root{
+    --back:rgb(255,122,0);
+  }
+
+.owl-nav .owl-prev, .owl-nav .owl-next {
+    top: 30%;
+    position: absolute;
+    border-radius: 90px !important;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.owl-nav .owl-prev {
+    left: -5%;
+}
+.owl-nav .owl-next {
+    right: 5%;
+}
+ .owl-nav .owl-prev i, .owl-nav .owl-next i {
+    color: #fff;
+    font-size: 20px;
+    position: relative;
+    left: 0px;
+}
+
+
+/* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
+
+.team_aboutus
+{
+  background-color: rgba(0, 0, 0, 0.4);
+  /* margin: 40px; */
+  padding-top: 160px;
+  padding-bottom: 130px;
+  border-radius: 10px;
+  
+}
+.team_cont
+{
+  margin-top: 50px;
+  
+}
+.teams_name
+{
+  color: white;
+  margin-bottom: 20px;
+  
+}
+.team_card
+{
+    background-color: var(--back);
+    align-content: center;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    border-radius: 10px;
+}
+.team_DP
+{ 
+  background-color: var(--back);
+  width: 30%;
+  height: auto;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 8px;
+  padding: 1px;
+  border-color: var(--back);
+  margin-top: -200px;
+  margin-bottom: 5px;
+}
+.team_desc
+{
+  
+  width: 100%;
+  background-color: white;
+  padding-top: 50px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  
+}
+
+.team_name
+{
+    
+  font-size: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  
+  color: rgb(52, 52, 52);
+}
+.team_post
+{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: rgb(92, 92, 92);
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.team_about
+{
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400;
+  color: rgb(121, 121, 121);
+  margin: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  text-align: justify;
+}
+.team_btn
+{
+  width: 40px;
+  height: 40px;
+  padding: 10px;
+  border-radius: 100px;
+  background-color:var(--back);
+  
+  border-width: 0px;
+  margin: 5px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+}
+
+.team_btn:hover {
+  opacity: 0.8;
+  
+}
+.ico
+{
+  font-size: 20px;
+}
+
+
+
+
+
+
+
+
+/* ////////////////////////////////////////////////////////// */
+
+
+
+@import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
+figure.snip1113 {
+  font-family: 'Raleway', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+  margin: 10px;
+  min-width: 220px;
+  max-width: 310px;
+  width: 100%;
+  background: #ffffff;
+  text-align: center;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+}
+
+figure.snip1113 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+figure.snip1113 img {
+  max-width: 65%;
+  margin: 40px auto;
+  display: block;
+  position: relative;
+  border: 3px solid #666666;
+  padding: 15px 15px 85px 15px;
+  -webkit-transform: translate(0, 0);
+  transform: translate(0, 0);
+}
+
+figure.snip1113 figcaption {
+  position: absolute;
+  height: 120px;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  display: block;
+}
+
+figure.snip1113 h3 {
+  background-color: #ffffff;
+  color: #000000;
+  font-size: 1.7em;
+  width: 100%;
+  padding: 5px 12px;
+  margin: 0;
+  text-transform: uppercase;
+  font-weight: 400;
+}
+
+figure.snip1113 h3 span {
+  font-weight: 800;
+}
+
+figure.snip1113 h4 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  opacity: 0.6;
+  font-size: 1.1em;
+}
+
+figure.snip1113.blue img {
+  border-color: #2472a4;
+}
+
+figure.snip1113.blue h3,
+figure.snip1113.blue h4 {
+  color: #2472a4;
+}
+
+figure.snip1113.red img {
+  border-color: #ab3326;
+}
+
+figure.snip1113.red h3,
+figure.snip1113.red h4 {
+  color: #ab3326;
+}
+
+figure.snip1113.yellow img {
+  border-color: #e08e0b;
+}
+
+figure.snip1113.yellow h3,
+figure.snip1113.yellow h4 {
+  color: #e08e0b;
+}
+
+figure.snip1113.green img {
+  border-color: #229955;
+}
+
+figure.snip1113.green h3,
+figure.snip1113.green h4 {
+  color: #229955;
+}
+
+figure.snip1113.orange img {
+  border-color: #d67118;
+}
+
+figure.snip1113.orange h3,
+figure.snip1113.orange h4 {
+  color: #d67118;
+}
+
+figure.snip1113.navy img {
+  border-color: #2b3c4e;
+}
+
+figure.snip1113.navy h3,
+figure.snip1113.navy h4 {
+  color: #2b3c4e;
+}
+
+
+/* Demo purposes only */
