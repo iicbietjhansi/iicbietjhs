@@ -16,7 +16,7 @@
     left: -5%;
 }
 .owl-nav .owl-next {
-    right: 5%;
+    right: -5%;
 }
  .owl-nav .owl-prev i, .owl-nav .owl-next i {
     color: #fff;
@@ -207,7 +207,13 @@ figure.snip1113 h4 {
   opacity: 0.6;
   font-size: 1.1em;
 }
-
+figure.snip1113 h5 {
+  margin: 0;
+  text-transform: uppercase;
+  letter-spacing: -1px;
+  opacity: 0.6;
+  font-size: 0.75em;
+}
 figure.snip1113.blue img {
   border-color: #2472a4;
 }

@@ -13,7 +13,7 @@ class MyHeader extends HTMLElement {
               <a class="text-white-50 p-2 ms-3"
                     href="https://www.facebook.com/BIET-Jhansi-Innovation-and-Incubation-Cell-116551726553214/"><i
                         class="fab fa-facebook-f"></i></a>
-                <a class="text-white-50 p-2 ms-3" href="https://www.youtube.com/watch?v=vmAfQXCDPlQ"><i
+                <a class="text-white-50 p-2 ms-3" href="https://www.youtube.com/@iicbietjhs"><i
                         class="fab fa-youtube"></i></a>
                 <a class="text-white-50 p-2 ms-3"
                     href="https://www.linkedin.com/company/innovation-and-incubation-cell-biet-jhansi/mycompany/"><i
@@ -55,7 +55,7 @@ class MyHeader extends HTMLElement {
                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About US</a>
                       <div class="dropdown-menu m-0">
                         <a href="/about.html" class="dropdown-item">Mission</a>
-                        <a href="team/team.html" class="dropdown-item">Our Team</a>
+                        <a href="../team/team.html" class="dropdown-item">Our Team</a>
                       </div>
                     </div>
                 </div>
@@ -88,7 +88,7 @@ class InnovanzaHeader extends HTMLElement {
               <a class="text-white-50 p-2 ms-3"
                     href="https://www.facebook.com/BIET-Jhansi-Innovation-and-Incubation-Cell-116551726553214/"><i
                         class="fab fa-facebook-f"></i></a>
-                <a class="text-white-50 p-2 ms-3" href="https://www.youtube.com/watch?v=vmAfQXCDPlQ"><i
+                <a class="text-white-50 p-2 ms-3" href="https://www.youtube.com/@iicbietjhs"><i
                         class="fab fa-youtube"></i></a>
                 <a class="text-white-50 p-2 ms-3"
                     href="https://www.linkedin.com/company/innovation-and-incubation-cell-biet-jhansi/mycompany/"><i
@@ -199,7 +199,7 @@ class MyFooter extends HTMLElement {
                         <a class="btn btn-square me-1"
                             href="https://www.facebook.com/BIET-Jhansi-Innovation-and-Incubation-Cell-116551726553214/"><i
                                 class="fab fa-facebook-f"></i></a>
-                        <a class="btn btn-square me-1" href="https://www.youtube.com/watch?v=vmAfQXCDPlQ"><i
+                        <a class="btn btn-square me-1" href="https://www.youtube.com/@iicbietjhs"><i
                                 class="fab fa-youtube"></i></a>
                         <a class="btn btn-square me-0"
                             href="https://www.linkedin.com/company/innovation-and-incubation-cell-biet-jhansi/mycompany/"><i
@@ -214,11 +214,11 @@ class MyFooter extends HTMLElement {
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
-                    <a class="btn btn-link" href="">Home</a>
-                    <a class="btn btn-link" href="">Events</a>
-                    <a class="btn btn-link" href="">Tranings</a>
-                    <a class="btn btn-link" href="">R&D Patnership</a>
-                    <a class="btn btn-link" href="">About</a>
+                    <a class="btn btn-link" href="index.html">Home</a>
+                    <a class="btn btn-link" href="other-events/index.html">Events</a>
+                    <a class="btn btn-link" href="../training/index.html">Tranings</a>
+                    <a class="btn btn-link" href="../entrepreneurship/index.html">BIICF</a>
+                    <a class="btn btn-link" href="about.html">About</a>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Newsletter</h5>
