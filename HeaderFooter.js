@@ -54,8 +54,8 @@ class MyHeader extends HTMLElement {
                     <div class="nav-item dropdown">
                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About US</a>
                       <div class="dropdown-menu m-0">
-                        <a href="/about.html" class="dropdown-item">Mission</a>
-                        <a href="../team/team.html" class="dropdown-item">Our Team</a>
+                        <a href="about.html#mission" class="dropdown-item">Mission</a>
+                        <a href="about.html#ourteam" class="dropdown-item">Our Team</a>
                       </div>
                     </div>
                 </div>
