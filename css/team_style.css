@@ -2,11 +2,25 @@
 :root{
     --back:rgb(255,122,0);
   }
+body
+{
+  background-image: url('../img/team_black.png');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  
+}
+
+
+
+
+
+
 
 .owl-nav .owl-prev, .owl-nav .owl-next {
-    top: 30%;
+    top: 40%;
     position: absolute;
-    border-radius: 90px !important;
+    border-radius: 40px !important;
     color: #ffffff;
     width: 40px;
     height: 40px;
@@ -24,6 +38,8 @@
     position: relative;
     left: 0px;
 }
+
+
 
 
 /* ////////////////////////////////////////////////////////////////////////////////////////////////////////////////// */
@@ -50,6 +66,7 @@
 }
 .team_card
 {
+  
     background-color: var(--back);
     align-content: center;
     width: 100%;
@@ -58,7 +75,9 @@
     border-radius: 10px;
 }
 .team_DP
-{ 
+{
+  
+  
   background-color: var(--back);
   width: 30%;
   height: auto;
@@ -207,13 +226,7 @@ figure.snip1113 h4 {
   opacity: 0.6;
   font-size: 1.1em;
 }
-figure.snip1113 h5 {
-  margin: 0;
-  text-transform: uppercase;
-  letter-spacing: -1px;
-  opacity: 0.6;
-  font-size: 0.75em;
-}
+
 figure.snip1113.blue img {
   border-color: #2472a4;
 }
