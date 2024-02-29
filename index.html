@@ -34,6 +34,8 @@
 </head>
 
 <body>
+  <script src="datacollect.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> -->
     <div id="spinner"
     class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
     <div class="spinner-grow text-primary" role="status"></div>
@@ -436,7 +438,7 @@
     </div>   
 
             <!-- Contact Start -->
-            <div class="container-xxl py-5">
+            <div class="container-xxl py-5" >
                 <div class="container">
                     <div class="row g-5">
                         <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
@@ -444,36 +446,38 @@
                             </div>
                             <h1 class="display-6 mb-5">For queries, Please Contact Us</h1>
                             
-                            <form>
+                            <form method="post" action="https://script.google.com/macros/s/AKfycbyuWFLEakUtJav_0qMFpp_f1UTlOgjhb4oMf4wtH036ZFmI_T1af9yDTAOy9eGHHvQ/exec"
+                            name ="contact-form" id="contact-form">
                                 <div class="row g-3">
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="name" placeholder="Your Name">
+                                            <input type="text" name="User-Name" class="form-control" id="name" placeholder="Your Name">
                                             <label for="name">Your Name</label>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-floating">
-                                            <input type="email" class="form-control" id="email"
+                                            <input type="email" name="User-Email" class="form-control" id="email"
                                                 placeholder="Your Email">
                                             <label for="email">Your Email</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <input type="text" class="form-control" id="subject" placeholder="Subject">
+                                            <input type="text" name="User-Subject" class="form-control" id="subject" placeholder="Subject">
                                             <label for="subject">Subject</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-floating">
-                                            <textarea class="form-control" placeholder="Leave a message here"
-                                                id="message" style="height: 100px"></textarea>
+                                            <textarea name="User-Message"class="form-control" placeholder="Leave a message here"
+                                                id="message" style="height: 100 px"></textarea>
                                             <label for="message">Message</label>
                                         </div>
                                     </div>
                                     <div class="col-12">
-                                        <button class="btn btn-primary py-2 px-3 me-3">
+                                        <button type="submit" value=""
+                                        id="submit" class="btn btn-primary py-2 px-3 me-3">
                                             Send Message
                                             <div
                                                 class="d-inline-flex btn-sm-square bg-white text-primary rounded-circle ms-2">
@@ -498,7 +502,9 @@
             <!-- Contact End -->
             
             <!-- Footer Start -->
-           <my-footer></my-footer>
+           <my-footer>
+            
+           </my-footer>
             <!-- Footer End -->
                 <!-- Spinner Start -->
     
