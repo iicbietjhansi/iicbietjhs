@@ -81,7 +81,7 @@ class InnovanzaHeader extends HTMLElement {
                 <h1 id ="nav-responsive-small" class="fw-bold text-primary m-0" >IIC<span class="text-white"> BIET</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+                data-bs-target="#navbarCollapse" id="customNavbarToggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -179,7 +179,7 @@ class MyFooter extends HTMLElement {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
+                    <h5 class="text-light mb-4">Contact</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Innovation and Incubation cell, BIET Jhansi</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+91 9793816217</p>
                     <p><i class="fa fa-envelope me-3"></i>iic.bietjhansi@gmail.com</p>

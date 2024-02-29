@@ -82,43 +82,20 @@
 
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 id ="nav-responsive-big" class="fw-light fs-4 text-primary m-0">Bundelkhand Innovation & Incubation<span class="text-white"> <br> Center Foundation</span></h1>
+                <h1 id ="nav-responsive-big" class="fw-light fs-4 text-primary m-0">Bundelkhand Innovation & Incubation<span class="text-white"> Center Foundation</span></h1>
                 <h1 id ="nav-responsive-small" class="fw-light fs-4 text-primary m-0" >BIICF<span class="text-white"> BIET</span></h1>
             </a>
-            <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+            <button type="button" class="navbar-toggler me-4" id="customNavbarToggle">
+              <span class="navbar-toggler-icon"></span>
+          </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="../index.html" class="nav-item nav-link ">Home</a>
-                    <a href="https://innovanza.tech/" class="nav-item nav-link ">Innovanza'23</a>
-
-                    <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
-                   <div class="dropdown-menu m-0">
-                     <a href="https://innovanza.tech/" class="dropdown-item">Innovanza'23</a>
-                     <a href="../other-events/index.html" class="dropdown-item">Other Events</a>
-                   </div>
-                 </div>
-
-                    <div class="nav-item dropdown">
-                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Traning & Certification</a>
-                      <div class="dropdown-menu m-0">
-                        <a href="../training/index.html" class="dropdown-item">Training</a>
-                        <a href="../certification.html" class="dropdown-item">Certificate Verification</a>
-                      </div>
-                    </div>
-
-                    <a href="../entrepreneurship/index.html" class="nav-item nav-link">BIICF</a>
-                 
-                    <div class="nav-item dropdown">
-                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About US</a>
-                      <div class="dropdown-menu m-0">
-                        <a href="/about.html" class="dropdown-item">Mission</a>
-                        <a href="team/team.html" class="dropdown-item">Our Team</a>
-                      </div>
-                    </div>
+                  <a href="../index.html" class="nav-item nav-link ">Home</a>
+                  <a href="https://innovanza.tech/" class="nav-item nav-link ">Innovanza'24</a>
+                  <a href="../other-events/index.html" class="nav-item nav-link ">Events</a>
+                  <a href="../certification.html" class="nav-item nav-link ">Certificate Verification</a>
+                  <a href="../entrepreneurship/index.html" class="nav-item nav-link">BIICF</a>
+                  <a href="../about.html" class="nav-item nav-link">Our Team</a>
                  
                 </div>
 
@@ -193,7 +170,7 @@
         </div>
 
         <div class="row content">
-          <div class="col-lg-6">
+          <div class="col-lg-12">
             <p>
              We at, Bundelkhand Innovation and Incubation Centre Foundation provide an all around support for your start-up in its budding phase.
               
@@ -646,6 +623,16 @@
 
 <my-footer></my-footer>
 
+<!-- custom navbar toggle javascript  -->
+<script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"></script>
+<script>
+    $(document).ready(function() {
+        // Custom Navbar Toggle
+        $("#customNavbarToggle").click(function() {
+            $("#navbarCollapse").toggleClass("show");
+        });
+    });
+</script>
 
 
   <!-- Vendor JS Files -->
