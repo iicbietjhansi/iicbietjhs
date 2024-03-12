@@ -1,7 +1,7 @@
 //header
 class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
             <div class="col-lg-6 px-5 text-start">
@@ -24,8 +24,8 @@ class MyHeader extends HTMLElement {
         </div>
         <nav class="navbar navbar-expand-lg navbar-dark py-lg-0 px-lg-5 wow fadeIn" data-wow-delay="0.1s">
             <a href="index.html" class="navbar-brand ms-4 ms-lg-0">
-                <h1 id ="nav-responsive-big" class="fw-bold text-primary m-0">Innovation and Incubation<span class="text-white"> Cell</span></h1>
-                <h1 id ="nav-responsive-small" class="fw-bold text-primary m-0" >IIC<span class="text-white"> BIET</span></h1>
+                <h1 id ="nav-responsive-big" class="fw-light fs-4 text-primary m-0">Innovation and Incubation<span class="text-white"> Cell</span></h1>
+                <h1 id ="nav-responsive-small" class="fw-light fs-4 text-primary m-0" >IIC<span class="text-white"> BIET</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
                 data-bs-target="#navbarCollapse">
@@ -33,49 +33,27 @@ class MyHeader extends HTMLElement {
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
                 <div class="navbar-nav ms-auto p-4 p-lg-0">
-                    <a href="../index.html" class="nav-item nav-link ">Home</a>
-                    <a href="https://innovanza.tech/" class="nav-item nav-link ">Innovanza'23</a>
 
-                    <div class="nav-item dropdown">
-                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Events</a>
-                   <div class="dropdown-menu m-0">
-                     <a href="https://innovanza.tech/" class="dropdown-item">Innovanza'23</a>
-                     <a href="../other-events/index.html" class="dropdown-item">Other Events</a>
-                   </div>
-                 </div>
-                    <div class="nav-item dropdown">
-                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Traning & Certification</a>
-                      <div class="dropdown-menu m-0">
-                        <a href="../training/index.html" class="dropdown-item">Training</a>
-                        <a href="../certification.html" class="dropdown-item">Certificate Verification</a>
-                      </div>
-                    </div>
+                    <a href="../index.html" class="nav-item nav-link ">Home</a>
+                    <a href="https://innovanza.tech/" class="nav-item nav-link ">Innovanza'24</a>
+                    <a href="../other-events/index.html" class="nav-item nav-link ">Events</a>
+                    <a href="../certification.html" class="nav-item nav-link ">Certificate Verification</a>
                     <a href="../entrepreneurship/index.html" class="nav-item nav-link">BIICF</a>
-                    <div class="nav-item dropdown">
-                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">About US</a>
-                      <div class="dropdown-menu m-0">
-                        <a href="about.html#mission" class="dropdown-item">Mission</a>
-                        <a href="about.html#ourteam" class="dropdown-item">Our Team</a>
-                      </div>
-                    </div>
+                    <a href="../about.html" class="nav-item nav-link">Our Team</a>
                 </div>
             </div>
         </nav>
     </div>
-
         
-        `
-    }
+        `;
+  }
 }
-customElements.define('my-header', MyHeader)
-
-
-
+customElements.define("my-header", MyHeader);
 
 //Innovanza header
 class InnovanzaHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         
     <div class="container-fluid fixed-top px-0 wow fadeIn" data-wow-delay="0.1s">
         <div class="top-bar text-white-50 row gx-0 align-items-center d-none d-lg-flex">
@@ -103,7 +81,7 @@ class InnovanzaHeader extends HTMLElement {
                 <h1 id ="nav-responsive-small" class="fw-bold text-primary m-0" >IIC<span class="text-white"> BIET</span></h1>
             </a>
             <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse"
-                data-bs-target="#navbarCollapse">
+                data-bs-target="#navbarCollapse" id="customNavbarToggle">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
@@ -170,21 +148,15 @@ class InnovanzaHeader extends HTMLElement {
     </div>
 
         
-        `
-    }
+        `;
+  }
 }
-customElements.define('innovanza-header', InnovanzaHeader)
-
-
-
-
-
-
+customElements.define("innovanza-header", InnovanzaHeader);
 
 //footer
 class MyFooter extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         
         <div class="container-fluid bg-dark text-white-50 footer mt-5 pt-5 wow fadeIn" data-wow-delay="0.1s">
         <div class="container py-5">
@@ -207,7 +179,7 @@ class MyFooter extends HTMLElement {
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6">
-                    <h5 class="text-light mb-4">Address</h5>
+                    <h5 class="text-light mb-4">Contact</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Innovation and Incubation cell, BIET Jhansi</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+91 9793816217</p>
                     <p><i class="fa fa-envelope me-3"></i>iic.bietjhansi@gmail.com</p>
@@ -242,15 +214,15 @@ class MyFooter extends HTMLElement {
             </div>
         </div>
     </div>
-        `
-    }
+        `;
+  }
 }
-customElements.define('my-footer', MyFooter)
+customElements.define("my-footer", MyFooter);
 
 // head Links
 class HeadLinks extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
         
         <meta charset="utf-8">
     
@@ -282,17 +254,17 @@ class HeadLinks extends HTMLElement {
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
       
-        `
-    }
+        `;
+  }
 }
-customElements.define('head-links', HeadLinks)
+customElements.define("head-links", HeadLinks);
 
 class FootLinks extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
+  connectedCallback() {
+    this.innerHTML = `
 
     
-        `
-    }
+        `;
+  }
 }
-customElements.define('foot-links', FootLinks)
+customElements.define("foot-links", FootLinks);
