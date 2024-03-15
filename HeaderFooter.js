@@ -182,7 +182,7 @@ class MyFooter extends HTMLElement {
                     <h5 class="text-light mb-4">Contact</h5>
                     <p><i class="fa fa-map-marker-alt me-3"></i>Innovation and Incubation cell, BIET Jhansi</p>
                     <p><i class="fa fa-phone-alt me-3"></i>+91 9793816217</p>
-                    <p><i class="fa fa-envelope me-3"></i>iic.bietjhansi@gmail.com</p>
+                    <p><i class="fa fa-envelope me-3"></i>iic@bietjhs.ac.in</p>
                 </div>
                 <div class="col-lg-3 col-md-6">
                     <h5 class="text-light mb-4">Quick Links</h5>
