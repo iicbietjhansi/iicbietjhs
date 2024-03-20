@@ -256,3 +256,15 @@ function scrollToSection(sectionId) {
       section.scrollIntoView({ behavior: 'smooth' });
   }
 }
+document.addEventListener('DOMContentLoaded', function() {
+  document.querySelector('.btn-get-started').addEventListener('click', function(event) {
+    event.preventDefault();
+    var targetId = this.getAttribute('href');
+    var targetElement = document.querySelector(targetId);
+    if(targetElement) {
+      targetElement.scrollIntoView({
+        behavior: 'smooth'
+      });
+    }
+  });
+});
