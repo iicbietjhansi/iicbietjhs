@@ -124,7 +124,7 @@ class InnovanzaHeader extends HTMLElement {
                       </div>
                     </div>
                     <div class="nav-item dropdown">
-                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Traning & Certification</a>
+                       <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Training & Certification</a>
                       <div class="dropdown-menu m-0">
                         <a href="../training/index.html" class="dropdown-item">Training</a>
                         <a href="../certification.html" class="dropdown-item">Certificate Verification</a>
@@ -164,7 +164,7 @@ class MyFooter extends HTMLElement {
                 <div class="col-lg-3 col-md-6">
                     <h1 class="fw-bold text-primary mb-4">Innovation and Incubation<span class="text-white">
                             Cell</span></h1>
-                    <p>The incubation centre of Bundel- khand region which give a wing to your innovative idea and also build a foundation for your startups</p>
+                    <p>The incubation centre of Bundelkhand region which give a wing to your innovative idea and also build a foundation for your startups.</p>
                     <div class="d-flex pt-2">
                         <a class="btn btn-square me-1" href="https://www.instagram.com/iic_bietjhs/"><i
                                 class="fab fa-instagram"></i></a>
