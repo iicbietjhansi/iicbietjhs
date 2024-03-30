@@ -7,7 +7,7 @@ class MyHeader extends HTMLElement {
             <div class="col-lg-6 px-5 text-start">
                 <small><i class="fa fa-map-marker-alt me-2"></i>Innovation & Incubation Center, BIET Jhansi</small>
                 // <small class="ms-4"><i class="fa fa-envelope me-2"></i>iic@bietjhs.ac.in</small>
-                <small class="ms-4"><i class="fa fa-envelope me-2"></i></small>//changes done for overlapping email
+                <small class="ms-4"><i class="fa fa-envelope me-2"></i></small>
             </div>
             <div class="col-lg-6 px-5 d-flex flex-row text-end">
                 <small class="p-2">Follow us:</small>
