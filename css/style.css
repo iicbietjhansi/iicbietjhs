@@ -49,7 +49,7 @@
     list-style-type: none; /* Removes bullets */
     padding: 0; /* Removes default padding */
     margin: 0; /* Removes default margin */
-    height: 160px; /* Fixed height to show only 4 items */
+    height: 120px; /* Fixed height to show only 4 items */
     overflow-y: auto; /* Enables vertical scrolling */
     border-top: 1px solid #e0e0e0; /* Adds a light border at the top */
     border-bottom: 1px solid #e0e0e0; /* Adds a light border at the bottom */
