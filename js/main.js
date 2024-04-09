@@ -19,7 +19,7 @@
         const list = document.getElementById('eventsList');
         let scrollAmount = 0;
         const scrollStep = 0.5; // Adjust for a slower scroll speed
-        const scrollInterval = 30; // Adjust interval for smoother scrolling
+        const scrollInterval = 500; // Adjust interval for smoother scrolling
     
         let autoScrollInterval = setInterval(autoScroll, scrollInterval);
     
