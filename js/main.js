@@ -14,7 +14,45 @@
     
     // Initiate the wowjs
     new WOW().init();
-
+   // news and event js
+    document.addEventListener('DOMContentLoaded', (event) => {
+        const list = document.getElementById('eventsList');
+        let scrollAmount = 0;
+        const scrollStep = 0.5; // Adjust for a slower scroll speed
+        const scrollInterval = 30; // Adjust interval for smoother scrolling
+    
+        let autoScrollInterval = setInterval(autoScroll, scrollInterval);
+    
+        function autoScroll() {
+            if (scrollAmount >= list.scrollHeight - list.clientHeight) {
+                scrollAmount = 0; // Resets to top when end is reached
+            }
+            list.scrollTop = scrollAmount;
+            scrollAmount += scrollStep; // Use scrollStep for consistent, gradual scrolling
+        }
+    
+        // Pause auto-scrolling when user hovers over the list
+        list.addEventListener('mouseover', () => {
+            clearInterval(autoScrollInterval);
+        });
+    
+        // Resume auto-scrolling when user stops interacting
+        list.addEventListener('mouseleave', () => {
+            autoScrollInterval = setInterval(autoScroll, scrollInterval);
+        });
+    
+        // Allow manual scrolling to pause auto-scroll
+        // list.addEventListener('scroll', () => {
+        //     clearInterval(autoScrollInterval);
+        //     scrollAmount = list.scrollTop; // Update scroll amount to current position
+        //     // Resume after no scroll events for 2000 milliseconds
+        //     setTimeout(() => {
+        //         autoScrollInterval = setInterval(autoScroll, scrollInterval);
+        //     }, 2000);
+        // });
+    });
+    
+    // news and event js end
 
     // Fixed Navbar
     $(window).scroll(function () {
