@@ -30,6 +30,174 @@
             -webkit-backdrop-filter: blur(9.3px);
             
         }
+        .updatess {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+        .updatess h1 {
+            font-size: 1.875rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 2rem;
+            background-color: #FF7518;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 0.5rem;
+        }
+        .tabs-list {
+            display: flex;
+            width: 100%;
+            border-bottom: 1px solid #e5e7eb;
+            margin-bottom: 1rem;
+        }
+        .tab-trigger {
+            flex: 1;
+            padding: 0.75rem 1rem;
+            background-color: #f3f4f6;
+            border: none;
+            border-top: 3px solid transparent;
+            cursor: pointer;
+            text-align: center;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border-radius: 0;
+        }
+        .tab-trigger.active {
+            background-color: #fff;
+            border-top-color: #FF7518;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            color: #FF7518;
+        }
+        .scroll-area {
+            height: 400px;
+            width: 100%;
+            overflow-y: auto;
+            border: 1px solid #d1d5db;
+            border-radius: 0.375rem;
+        }
+        .news-grid {
+            display: grid;
+            gap: 1rem;
+            padding: 1rem;
+        }
+        @media (min-width: 640px) {
+            .news-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+        .card {
+            display: flex;
+            flex-direction: column;
+            background-color: #fff;
+            border: 1px solid #e5e7eb;
+            border-radius: 0.5rem;
+            overflow: hidden;
+        }
+        .card-header {
+            padding: 1rem 1rem 0.5rem;
+            border: none;
+        }
+        .card-title {
+            font-size: 1.125rem;
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+            
+        }
+        .badge {
+            display: inline-block;
+            padding: 0.25rem 0.5rem;
+            background-color: #FF7518;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+        }
+        .card-content {
+            padding: 0 1rem;
+            flex-grow: 1;
+            background-color: #f3f4f6;
+        }
+        .card-content p {
+            font-size: 0.875rem;
+            color: #0a0b0d;
+            
+        }
+        .card-footer {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0.5rem 1rem 1rem;
+            border:none
+        }
+        .date {
+            font-size: 0.75rem;
+            color: #6b7280;
+            display: flex;
+            align-items: center;
+        }
+        .date svg {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-right: 0.25rem;
+        }
+        .more-button {
+            padding: 0.5rem 1rem;
+            background-color: #FF7518;
+            color: #fff;
+            border: none;
+            border-radius: 0.25rem;
+            font-size: 0.875rem;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+        }
+        .more-button:hover {
+            background-color: #E56A15;
+        }
+        .more-button svg {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin-left: 0.25rem;
+        }
+        .events-list {
+            list-style-type: none;
+            padding: 1rem;
+        }
+        .event-item {
+            display: flex;
+            align-items: flex-start;
+            padding-bottom: 1rem;
+            margin-bottom: 1rem;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .event-item:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+        }
+        .event-icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: rgba(59, 130, 246, 0.1);
+            border-radius: 9999px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 1rem;
+        }
+        .event-icon svg {
+            width: 1.5rem;
+            height: 1.5rem;
+            color: #FF7518;
+        }
+        .event-details h3 {
+            font-size: 0.875rem;
+            font-weight: 600;
+            margin-bottom: 0.25rem;
+        }
+        .event-details p {
+            font-size: 0.75rem;
+            color: #6b7280;
+        }
        
     </style>
 </head>
@@ -124,23 +292,47 @@
     </div>
     <!-- Carousel End -->
     <!-- Notices and Alerts start -->
-         <div class="news-and-events">
+    <div class="updatess">
+        <h1>News & Updates</h1>
+        <div class="tabs">
+            <div class="tabs-list">
+                <button class="tab-trigger active" data-tab="news">Latest News</button>
+                <button class="tab-trigger" data-tab="events">Upcoming Events</button>
+            </div>
+            <div class="scroll-area">
+                <div id="news-content" class="tab-content">
+                    <div class="news-grid">
+                        <!-- News items will be dynamically inserted here -->
+                    </div>
+                </div>
+                <div id="events-content" class="tab-content" style="display: none;">
+                    <ul class="events-list">
+                        <!-- Event items will be dynamically inserted here -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src="news&updates.js"></script>
+    </div>
+<!-- <div class="news-and-events">
             <h2>News and Announcement</h2>
             <ul id="eventsList">
                 <li><a href="https://drive.google.com/file/d/1vYGhEIDbtB-vJgq7o0Pwr6GqusODXF8T/view?usp=sharing">Summer Internship at IIC</a></li>
                 <li><a href="https://forms.gle/P7wabyGAprkJfwkb9">Free internship opportunity at Incubation Center,  BIET Jhansi ( BIICF) for all B.Tech, MBA students. Kindly reach out to veneu for further details. Registrations are opened.</a></li>
                 <li><a href="https://www.innovanza.iicbietjhs.in/">Bundelkhand biggest techfest</a></li>
                 <li><a href="">DJ Night at biet jhansi on 13th April 2024</a></li>
-                <!-- <li><a href="link4-url">Event 4</a></li> -->
-                <!-- <li><a href="link5-url">Event 5</a></li>
+                <li><a href="link4-url">Event 4</a></li>
+                <li><a href="link5-url">Event 5</a></li>
                 <li><a href="link6-url">Event 6</a></li>
                 <li><a href="link7-url">Event 7</a></li>
                 <li><a href="link8-url">Event 8</a></li>
                 <li><a href="link9-url">Event 9</a></li>
-                <li><a href="link10-url">Event 10</a></li> -->
+                <li><a href="link10-url">Event 10</a></li>
             </ul>
-        </div>               
+        </div>                -->
          <!-- Notices and alerts end -->
+
+    
     <!-- About Start -->
     <div class="container-xxl py-5">
         <div class="container">
