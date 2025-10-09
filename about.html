@@ -2438,10 +2438,29 @@
     <!-- Template Javascript -->
     <script src="js/main.js"></script>
     <script src="js/team.js"></script>
+    <script>
+$(document).ready(function(){
+    $('#staff_heads').owlCarousel({
+        loop: true,
+        margin: 10,
+        nav: true,
+        autoplay: true,
+        autoplayTimeout: 3000,
+        autoplayHoverPause: true,
+        responsive: {
+            0: { items: 1 },
+            600: { items: 2 },
+            1000: { items: 3 }
+        }
+    });
+});
+</script>
+
 
 </body>
 
 </html>
+
 
 
 
